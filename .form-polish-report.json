@@ -1,0 +1,10 @@
+{
+  "entities": {
+    "Fahrzeuge": {
+      "placeholders_set": 15,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten ohne Berechnungskette und ohne offensichtliche Startwerte, daher keine Formeln."
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "language": "de",
+  "understanding": {
+    "summary": "Du bekommst eine Fahrzeuggarage, in der du alle deine Fahrzeuge mit den wichtigsten Eckdaten verwaltest: Hersteller, Typ, Fahrzeug-Identifizierungsnummer (FIN), Erstzulassung, Kennzeichen, Fahrzeugart, Kraftstoff, Leistung, Hubraum, Kilometerstand, Versicherung und nächste Hauptuntersuchung. Das Dashboard zeigt dir die Fahrzeuge auf einen Blick und erinnert an anstehende Hauptuntersuchungen. Das Design der HUK Mein Auto App kann nicht nachgebaut werden, die Anwendung nutzt das Standarddesign der Plattform.",
+    "outside_users": [],
+    "roles": [
+      "Fahrzeughalter"
+    ],
+    "main_tasks": [
+      "Fahrzeug mit Eckdaten erfassen",
+      "Fahrzeuge in der Garage ansehen und suchen",
+      "Nächste Hauptuntersuchung im Blick behalten"
+    ],
+    "platform_roles": [
+      {
+        "persona": "Fahrzeughalter",
+        "role": "administrator",
+        "apps": [
+          "fahrzeuge"
+        ]
+      }
+    ],
+    "wish_kind": "plain",
+    "wish_signals": []
+  },
+  "flows": [],
+  "public_pages": [],
+  "tools": [
+    {
+      "id": "hu-erinnerung-senden",
+      "purpose": "Prüft täglich alle Fahrzeuge mit Datum der nächsten Hauptuntersuchung und schickt eine Sammelmail an den Schlüsselinhaber, wenn die HU innerhalb der nächsten 30 Tage fällig wird oder überfällig ist. Schreibt keine Felder."
+    }
+  ],
+  "covered_by_platform": [
+    {
+      "wish": "Fahrzeuge mit Eckdaten erfassen und bearbeiten",
+      "feature": "record_form"
+    },
+    {
+      "wish": "Alle Fahrzeuge in der Garage sehen",
+      "feature": "list_page"
+    },
+    {
+      "wish": "Fahrzeuge nach Hersteller, Typ oder FIN finden",
+      "feature": "search_filter"
+    },
+    {
+      "wish": "Fahrzeuge je Fahrzeugart zählen",
+      "feature": "distribution_view"
+    },
+    {
+      "wish": "Fahrzeugpapiere wie Schein oder Versicherung ablegen",
+      "feature": "record_attachments"
+    }
+  ],
+  "ownership": {},
+  "dashboard": {
+    "focus": [
+      "Fahrzeuge der Garage mit Hersteller, Typ, Fahrzeugart und Kennzeichen",
+      "Anstehende Hauptuntersuchungen (HU)",
+      "Anzahl Fahrzeuge je Fahrzeugart"
+    ],
+    "hints": [
+      "Fahrzeuge mit bald fälliger nächster Hauptuntersuchung hervorheben",
+      "Kilometerstand und Erstzulassung in der Fahrzeugliste zeigen"
+    ],
+    "writes": [],
+    "wishes": []
+  }
+}

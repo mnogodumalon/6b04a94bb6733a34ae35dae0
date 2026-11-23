@@ -1,0 +1,390 @@
+{
+  "appgroup_id": "6b04a94bb6733a34ae35dae0",
+  "appgroup_name": "Meine Fahrzeuggarage",
+  "apps": {
+    "fahrzeuge": {
+      "app_id": "6b04a940c5f14417832d287e",
+      "name": "Fahrzeuge",
+      "main": false,
+      "controls": {
+        "versicherung": {
+          "kind": "textcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/versicherung",
+          "identifier": "versicherung",
+          "label": "Versicherung",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "versicherungsnummer": {
+          "kind": "textcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/versicherungsnummer",
+          "identifier": "versicherungsnummer",
+          "label": "Versicherungsscheinnummer",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "notizen": {
+          "kind": "textareacontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/notizen",
+          "identifier": "notizen",
+          "label": "Bemerkungen",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "naechste_hu": {
+          "kind": "datecontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/naechste_hu",
+          "identifier": "naechste_hu",
+          "label": "Nächste Hauptuntersuchung (HU)",
+          "type": "date",
+          "subtype": "date",
+          "fulltype": "date/date",
+          "description": "A calendar date consisting of year, month and day (or `null`/`None`)\n\nThe field value will be a string in the format `<YYYY>-<MM>-<DD>` (or `null`/`None`).\n\nFor example: `2000-02-29`.\n\nFor `POST`/`PUT`/`PATCH` requests the REST API uses a liberal parsing approach so that strings like `2026`, `February 29, 2000 12:34 MEST`, `letztes Jahr` etc. will be accepted as value date values. However this runs the risk of parsing ambiguous values incorrectly. To ensure reliable parsing it is best to use the canonical format specified above.",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "hersteller": {
+          "kind": "textcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/hersteller",
+          "identifier": "hersteller",
+          "label": "Hersteller",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": true,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": null,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "modell_typ": {
+          "kind": "textcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/modell_typ",
+          "identifier": "modell_typ",
+          "label": "Typ / Modell",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": true,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": null,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "fahrzeugart": {
+          "kind": "lookupselectcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/fahrzeugart",
+          "identifier": "fahrzeugart",
+          "label": "Fahrzeugart",
+          "type": "lookup",
+          "subtype": "select",
+          "fulltype": "lookup/select",
+          "description": "One selected option of multiple available options (or `null`/`None`).\n\nThe available options are defined in the `lookup_data` attribute of this control.\n\nThe field value will be the key in this `lookup_data` attribute (or `null`/`None`).\n\nDisplayed as single-select field in HTML pages.",
+          "required": false,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "translations": null,
+          "lookup_data": {
+            "pkw": "PKW",
+            "motorrad": "Motorrad",
+            "transporter": "Transporter",
+            "wohnmobil": "Wohnmobil",
+            "anhaenger": "Anhänger",
+            "sonstiges": "Sonstiges"
+          },
+          "lookup_items": {
+            "pkw": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "PKW",
+              "translations": null
+            },
+            "motorrad": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Motorrad",
+              "translations": null
+            },
+            "transporter": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Transporter",
+              "translations": null
+            },
+            "wohnmobil": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Wohnmobil",
+              "translations": null
+            },
+            "anhaenger": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Anhänger",
+              "translations": null
+            },
+            "sonstiges": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Sonstiges",
+              "translations": null
+            }
+          }
+        },
+        "fin": {
+          "kind": "textcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/fin",
+          "identifier": "fin",
+          "label": "Fahrzeug-Identifizierungsnummer (FIN)",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": true,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "erstzulassung": {
+          "kind": "datecontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/erstzulassung",
+          "identifier": "erstzulassung",
+          "label": "Erstzulassung",
+          "type": "date",
+          "subtype": "date",
+          "fulltype": "date/date",
+          "description": "A calendar date consisting of year, month and day (or `null`/`None`)\n\nThe field value will be a string in the format `<YYYY>-<MM>-<DD>` (or `null`/`None`).\n\nFor example: `2000-02-29`.\n\nFor `POST`/`PUT`/`PATCH` requests the REST API uses a liberal parsing approach so that strings like `2026`, `February 29, 2000 12:34 MEST`, `letztes Jahr` etc. will be accepted as value date values. However this runs the risk of parsing ambiguous values incorrectly. To ensure reliable parsing it is best to use the canonical format specified above.",
+          "required": true,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "kennzeichen": {
+          "kind": "textcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/kennzeichen",
+          "identifier": "kennzeichen",
+          "label": "Amtliches Kennzeichen",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "farbe": {
+          "kind": "textcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/farbe",
+          "identifier": "farbe",
+          "label": "Farbe",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "kraftstoff": {
+          "kind": "lookupselectcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/kraftstoff",
+          "identifier": "kraftstoff",
+          "label": "Kraftstoff / Antrieb",
+          "type": "lookup",
+          "subtype": "select",
+          "fulltype": "lookup/select",
+          "description": "One selected option of multiple available options (or `null`/`None`).\n\nThe available options are defined in the `lookup_data` attribute of this control.\n\nThe field value will be the key in this `lookup_data` attribute (or `null`/`None`).\n\nDisplayed as single-select field in HTML pages.",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null,
+          "lookup_data": {
+            "benzin": "Benzin",
+            "diesel": "Diesel",
+            "elektro": "Elektro",
+            "hybrid": "Hybrid",
+            "plugin_hybrid": "Plug-in-Hybrid",
+            "gas": "Erdgas / LPG",
+            "sonstiges": "Sonstiges"
+          },
+          "lookup_items": {
+            "benzin": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Benzin",
+              "translations": null
+            },
+            "diesel": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Diesel",
+              "translations": null
+            },
+            "elektro": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Elektro",
+              "translations": null
+            },
+            "hybrid": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Hybrid",
+              "translations": null
+            },
+            "plugin_hybrid": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Plug-in-Hybrid",
+              "translations": null
+            },
+            "gas": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Erdgas / LPG",
+              "translations": null
+            },
+            "sonstiges": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Sonstiges",
+              "translations": null
+            }
+          }
+        },
+        "leistung_kw": {
+          "kind": "numbercontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/leistung_kw",
+          "identifier": "leistung_kw",
+          "label": "Leistung (kW)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "description": "A decimal number value (or `null`/`None`).",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null,
+          "precision": null
+        },
+        "hubraum_ccm": {
+          "kind": "numbercontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/hubraum_ccm",
+          "identifier": "hubraum_ccm",
+          "label": "Hubraum (ccm)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "description": "A decimal number value (or `null`/`None`).",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null,
+          "precision": null
+        },
+        "kilometerstand": {
+          "kind": "numbercontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6b04a940c5f14417832d287e/controls/kilometerstand",
+          "identifier": "kilometerstand",
+          "label": "Kilometerstand (km)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "description": "A decimal number value (or `null`/`None`).",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null,
+          "precision": null
+        }
+      }
+    }
+  },
+  "metadata": {
+    "apps_list": [
+      "Fahrzeuge"
+    ]
+  }
+}

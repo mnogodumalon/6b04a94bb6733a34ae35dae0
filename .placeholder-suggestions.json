@@ -1,0 +1,19 @@
+{
+  "FahrzeugeDialog.tsx": {
+    "versicherung": "z. B. HUK-COBURG",
+    "versicherungsnummer": "z. B. VS-123456789",
+    "notizen": "Weitere Hinweise zum Fahrzeug",
+    "naechste_hu": "Wann ist die nächste HU?",
+    "hersteller": "z. B. Volkswagen",
+    "modell_typ": "z. B. Golf VIII",
+    "fahrzeugart": "z. B. PKW, Motorrad",
+    "fin": "z. B. WVWZZZ1JZXW000001",
+    "erstzulassung": "Wann wurde es zugelassen?",
+    "kennzeichen": "z. B. B-AB 1234",
+    "farbe": "z. B. Schwarz",
+    "kraftstoff": "z. B. Benzin, Diesel",
+    "leistung_kw": "z. B. 110",
+    "hubraum_ccm": "z. B. 1998",
+    "kilometerstand": "z. B. 45000"
+  }
+}

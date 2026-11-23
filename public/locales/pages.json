@@ -1,0 +1,37 @@
+{
+  "pages": {
+    "en": {
+      "Alles erfasst": "All recorded",
+      "Als Nächstes steht die HU für {0} an — {1}.": "Next up is the inspection for {0} — {1}.",
+      "Bei {0} ist die Hauptuntersuchung überfällig.": "The inspection is overdue for {0}.",
+      "Deine Garage ist noch leer — erfasse dein erstes Fahrzeug.": "Your garage is still empty — add your first vehicle.",
+      "Erstes Fahrzeug erfassen": "Add first vehicle",
+      "Erstzulassung": "First registration",
+      "Fahrzeug hinzufügen": "Add vehicle",
+      "Fahrzeugart": "Vehicle type",
+      "Fahrzeuge je Fahrzeugart": "Vehicles by vehicle type",
+      "HU heute fällig": "Inspection due today",
+      "HU in 90 Tagen": "Inspection in 90 days",
+      "HU in {0} Tagen": "Inspection in {0} days",
+      "HU morgen fällig": "Inspection due tomorrow",
+      "HU seit 1 Tag überfällig": "Inspection overdue by 1 day",
+      "HU seit {0} Tagen überfällig": "Inspection overdue by {0} days",
+      "HU-Termin fehlt": "No inspection date",
+      "In deiner Garage stehen {0} — keine HU in den nächsten Wochen.": "Your garage contains {0} — no inspection in the coming weeks.",
+      "Keine Fahrzeuge für diese Auswahl.": "No vehicles for this selection.",
+      "Keine anstehende HU erfasst.": "No upcoming inspection recorded.",
+      "Kilometerstand": "Mileage",
+      "Lege dein erstes Fahrzeug mit Hersteller, FIN und Erstzulassung an — wir erinnern dich an die nächste HU.": "Create your first vehicle with make, VIN and first registration — we'll remind you of the next inspection.",
+      "Neuen HU-Termin eintragen": "Enter new inspection date",
+      "Neuer Termin": "New appointment",
+      "Nichts in Sicht": "Nothing in sight",
+      "Nächste Hauptuntersuchungen": "Upcoming inspections",
+      "Ohne HU-Termin": "No inspection date",
+      "Suchen nach Marke, Kennzeichen, FIN …": "Search by make, license plate, VIN …",
+      "Termin nachtragen": "Add date",
+      "Termin vereinbaren": "Schedule appointment",
+      "— HU war fällig am {0}.": "— inspection was due on {0}."
+    }
+  },
+  "v": 1
+}
